@@ -19,6 +19,10 @@
         "url": "http://video.webmfiles.org/big-buck-bunny_trailer.webm",
         "thumbnailImage": "http://www.grcmc.org/images/events/evnt559c43975e495.jpg",
         "title": "The Terminator",
+        "description" : "Disguised as a human, a cyborg assassin known as a Terminator (Arnold Schwarzenegger) travels from 2029 to 1984 to kill Sarah Connor (Linda Hamilton). Sent to protect Sarah is Kyle Reese (Michael Biehn), who divulges the coming of Skynet, an artificial intelligence system that will spark a nuclear h...",
+        "duration" : "1h 45m",
+        "type" : "movie",
+        "added" : "1460399120294",
         "rating": {
             "value": 4,
             "votes": 1
