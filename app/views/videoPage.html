@@ -1,0 +1,55 @@
+<a href="/">&larr;</a>
+<div id="video-page" class="page-content">
+    <h1>{{video.title}}</h1>
+
+    <div class="left-side">
+        <div class="main-video-display">
+            <video class="video-js vjs-default-skin" controls preload="auto"
+                   width="720" height="284"  vjs-video vjs-media="media">
+            </video>
+        </div>
+
+        <div class="comments">
+            <h1>Comments</h1>
+            <div ng-show="video.comments.length === 0">No comments</div>
+            <div ng-show="video.comments.length > 0">
+                <div ng-repeat="comment in video.comments" class="comment">
+                    {{comment}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="right-side">
+        <div class="info-item">
+        <span class="bold">Title:</span>{{video.title}}
+        </div>
+        <div class="info-item">
+        <span class="bold">Description:</span>{{video.description}}
+        </div>
+        <div class="info-item">
+        <span class="bold">Thumbnail Image:</span><br/>
+
+        <img class="thumbnail" src="{{video.thumbnailImage}}"/><br/>
+        </div>
+        <div class="info-item">
+        <span class="bold">Type:</span>{{video.type}}<br/>
+        </div>
+        <div class="info-item">
+        <span class="bold">Duration:</span>{{video.duration}}<br/>
+        </div>
+        <div class="info-item">
+        <span class="bold">Rating:</span>{{video.rating.value}}<br/>
+        </div>
+        <div class="info-item">
+        <span class="bold">Added At:</span>{{video.added | date:'dd.MM.yyyy'}}<br/>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+

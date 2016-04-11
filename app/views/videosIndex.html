@@ -1,0 +1,47 @@
+<div id="videos-page" class="page-content">
+    <h1> {{mainVideo.title}}</h1>
+    <div class="main-video left-side"><!-- main video-->
+        <div class="main-video-display">
+            <video class="video-js vjs-default-skin" controls preload="auto"
+                   width="720" height="284"  vjs-video vjs-media="mainVideo.media">
+            </video>
+        </div>
+        <div class="video-rating">
+            <div class="rating-display">
+                Rating : <span title="{{mainVideo.rating.votes}} votes">{{mainVideo.rating.value | limitTo: 3}}</span>
+            </div>
+            <div class="rating-control">
+                <button ng-click="submitRating(1)">1</button>
+                <button ng-click="submitRating(2)">2</button>
+                <button ng-click="submitRating(3)">3</button>
+                <button ng-click="submitRating(4)">4</button>
+                <button ng-click="submitRating(5)">5</button>
+            </div>
+        </div>
+        <div class="main-video-comment">
+            Leave Comment : <textarea ng-model="comment"></textarea>
+        </div>
+        <div class="main-video-controls">
+            <a href="#/videos/{{mainVideo.id}}/details">Details information about the video</a>
+            <button ng-click="submitComment()">Save comment</button>
+        </div>
+    </div>
+    <div class="thumbnails right-side">
+        <div class="thumbnail" ng-repeat="video in videos" title="{{video.title}}">
+
+            <a href="#/videos/{{video.id}}"> <img ng-src="{{video.thumbnailImage}}"/></a>
+        </div>
+    </div>
+
+  <!--  <h2> Add Video</h2>
+    <a href="http://www.webmfiles.org/demo-files/" target="_blank">http://www.webmfiles.org/demo-files/</a> might have what you're looking for..
+    <div>
+        Url to mp4 : <input ng-model="input.url"/><br/>
+        Title : <input ng-model="input.title"/><br/>
+        Thumbnail Image: <input ng-model="input.thumbnailImage"/><br/>
+        Type: <input ng-model="input.type"/><br/>
+        Duration: <input ng-model="input.duration"/><br/>
+        Description: <textarea ng-model="input.description"></textarea>
+        <button ng-click="submitInput()">Submit</button>
+    </div>-->
+</div>

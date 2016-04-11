@@ -1,0 +1,28 @@
+{
+  "name": "my-first-heroku-app",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "guy mograbi <guy.mograbi@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/GuyMograbi/my-first-heroku-app",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.5.3",
+    "video.js": "videojs#~5.9.0",
+    "angular-route": "~1.5.3",
+    "vjs-video": "~0.1.5",
+    "lodash": "~4.10.0"
+  },
+  "resolutions": {
+    "video.js": "~4.12.13"
+  }
+}
